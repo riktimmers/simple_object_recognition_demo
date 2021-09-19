@@ -6,3 +6,4 @@ For classification PCL is used to remove the floor (flat surface), cluster the o
   
 In the folder 'object_recognition/data/training/images/object_name' are the images used for training (excluding augmentation). 
 
+[Link to demo video of result](https://youtu.be/h9DArHZGUMo)
