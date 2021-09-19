@@ -1,0 +1,15 @@
+<launch>
+	<arg name="data_gathering" default="false" /> <!-- When gathering data, don't start object recognition -->
+
+	<include file="$(find realsense2_camera)/launch/rs_rgbd.launch" />
+	<include file="$(find transform_calibrator)/launch/static_transform.launch" />
+
+	<node name="perception" pkg="perception" type="perception_node" />
+
+	<group unless="$(arg data_gathering)" >
+		<node name="object_recognition_server" pkg="object_recognition" type="object_recognition_server.py" />
+		<node name="test_object_recognition" pkg="object_recognition" type="test_object_recognition.py" />
+	</group>
+	
+
+</launch>

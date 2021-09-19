@@ -1,0 +1,4 @@
+*.pyc
+./data/training/images
+__pycache__
+.vscode
