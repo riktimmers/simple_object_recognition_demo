@@ -1,0 +1,3 @@
+float32 leaf_size
+float32 plane_threshold
+float32 cluster_threshold 
