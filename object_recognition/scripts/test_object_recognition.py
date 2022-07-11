@@ -21,6 +21,6 @@ while not rospy.is_shutdown():
   if state == actionlib.GoalStatus.SUCCEEDED:
     result = server.get_result()
   else:
-    print("Object regnition failed")
+    print("Object recognition failed")
   
 

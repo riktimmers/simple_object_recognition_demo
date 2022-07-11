@@ -8,3 +8,8 @@ In the folder 'object_recognition/data/training/images/object_name' are the imag
 
 [Link to demo video of result](https://youtu.be/h9DArHZGUMo)
 
+This package is tested only on ROS Noetic and Tensorflow 2.4.1
+```
+roslaunch object_recognition demo.launch
+```
+
